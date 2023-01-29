@@ -19,6 +19,9 @@ jobs:
 
       - name: List files
         run: ls -a
+
+      - name: See directory
+        run: pwd
       -
         name: Build the Docker image
         run: docker build -t python-flask-room-temperature -f Dockerfile .
