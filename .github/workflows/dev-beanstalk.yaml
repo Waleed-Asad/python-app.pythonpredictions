@@ -41,8 +41,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: Python-FLask-us-east-2App
-          environment_name: Python-FLask-us-east-2-API
+          application_name: Python-FLask-App
+          environment_name: Python-FLask-API
           version_label: "python-flask-room-temp-api-${{ steps.format-time.outputs.replaced }}"
           region: us-east-2
           deployment_package: deploy.zip
