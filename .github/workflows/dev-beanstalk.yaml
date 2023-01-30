@@ -21,7 +21,7 @@ jobs:
         run: docker build -t python-flask-room-temperature -f Dockerfile .
       -
         name: Generate Deployment Package
-        run: zip -r deploy.zip .env Dockerfile requirements.txt app.py
+        run: zip -r deploy.zip .env .flaskenv Dockerfile requirements.txt app.py
       -
         name: Get timestamp
         uses: gerred/actions/current-time@master
